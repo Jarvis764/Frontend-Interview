@@ -36,4 +36,13 @@ The application is styled using **Tailwind CSS** with a theme-driven and compone
 - The project is structured to support dark mode theming if enabled in the future
 
 ### Reusable UI Patterns
-- Reusable utility
+- Reusable utility classes are defined for:
+  - category badges
+  - article cards
+  - blog content typography
+- Hover states and transitions are used for interactive elements
+- Styling emphasizes readability, clarity, and visual consistency
+
+### Animations & Interactions
+- Smooth hover and transition effects for cards and interactive components
+- Accordion and shimmer animations implemented using Tailwind keyframes
