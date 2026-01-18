@@ -1,42 +1,39 @@
 ## Styling Requirements
 
-The application is styled using **Tailwind CSS** with a scalable, theme-driven design system.
+The application is styled using **Tailwind CSS** with a theme-driven and component-based design approach.
 
 ### Styling Framework
 - Tailwind CSS is used as the primary styling framework
-- Utility-first approach for consistent and maintainable styles
-- `tailwindcss-animate` plugin is used for smooth UI animations
+- Utility-first styling combined with reusable component classes
+- Global styles are organized using Tailwind’s `@layer` system
+- `tailwindcss-animate` plugin is used for lightweight UI animations
 
 ### Theme & Design System
-- Centralized color system using CSS variables (`hsl(var(--*))`) for easy theming
+- A centralized design system is implemented using **CSS variables**
 - Semantic color tokens are defined for:
+  - background, foreground
   - primary, secondary, accent
   - muted, destructive
-  - background, foreground, card, popover
-- Custom category-based colors are supported (finance, career, tech, skills, regulations)
-- Global border radius values are controlled via CSS variables for visual consistency
+  - card, popover, border, input, ring
+- Category-specific color tokens are supported:
+  - finance, career, tech, skills, regulations
+- Border radius is controlled globally using CSS variables for consistency
 
 ### Typography
-- Default font stack uses **Inter** with system font fallbacks
-- Font family is configured globally through Tailwind theme extension
+- **Inter** font is used as the primary typeface via Google Fonts
+- Font configuration is applied globally through Tailwind
+- Clean typographic hierarchy for headings, paragraphs, and lists
 
 ### Layout & Responsiveness
 - Responsive container layout with centered content
-- Consistent horizontal padding across screen sizes
-- Optimized layout for large screens with a max width of `1400px` on 2XL displays
-- Fully responsive design across desktop and smaller viewports
-
-### Animations & Interactions
-- Custom animations implemented for:
-  - Accordion open/close transitions
-  - Loading shimmer effects
-- Smooth, lightweight animations using Tailwind keyframes
+- Consistent spacing and padding across screen sizes
+- Layout optimized for large screens with a max width of 1400px on 2XL displays
+- Fully responsive design for desktop and smaller viewports
 
 ### Dark Mode Support
-- Dark mode is supported using a **class-based strategy**
-- Theme can be toggled without modifying component styles
+- Dark mode is configured using Tailwind’s **class-based strategy**
+- Light and dark color schemes are defined using CSS variables
+- The project is structured to support dark mode theming if enabled in the future
 
-### Reusability & Maintainability
-- Styling is component-driven and reusable
-- No inline styles; all styles are managed via Tailwind utility classes
-- Design tokens allow easy future theme updates
+### Reusable UI Patterns
+- Reusable utility
